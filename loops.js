@@ -6,7 +6,9 @@
 // Hoera!
 // ==========================================
 
-
+for (i = 0; i < 3; i++) {
+    console.log(`Hoera!`)
+}
 
 // ==========================================
 // Opdracht 2. Maak een for-loop die 4 keer het woord "loop..." logt, en bij de vijfde loop het woord "klaar!"
@@ -17,6 +19,15 @@
 // loop...
 // klaar!
  // ==========================================
+
+for (i = 0; i < 5; i++) {
+    if (i < 4) {
+        console.log(`loop,,,`);
+    } else {
+        console.log(`klaar!`);
+
+    }
+}
 
 
 
@@ -29,6 +40,17 @@
 // 3 is oneven
 // .... etc.
 // 15 is oneven
+
+for (i = 0; i <= 15; i++) {
+    const remainder = (nummer) => i % 2;
+    console.log(remainder(i))
+    if (remainder === 0) {
+        console.log(`${i} is even`);
+    } else {
+        console.log(`${i} is even`);
+    }
+}
+
 
 // Tip: een getal is oneven als je het door 2 deelt en er blijft nog iets over. Een getal is even als je het deelt door 2 en er blijft niets over..
 // ==========================================
@@ -51,3 +73,16 @@
 // >> 9
 // ==========================================
 
+for (i = 0; i <= 9; i++) {
+    let quote;
+
+    if (i>=3&&i<6) {
+        quote = ">"+i;
+    } else if (i >= 6) {
+        quote = ">>" + i;
+    } else {
+        quote = i
+    }
+
+    console.log(quote);
+}
